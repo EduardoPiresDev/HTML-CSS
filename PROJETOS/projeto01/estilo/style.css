@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@font-face {
+    font-family: 'designer';
+    src: url('/fontes/Designer.otf'); format: ('opentype');
+}
+
+:root {
+    --cor0: #E46662;
+    --cor1: #F51B0E;
+    --cor2: #BB0612;
+    --cor3: #8A1C1A;
+    --cor4: #6D0815;
+    --cor5: #E6B3B9;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Oswald", sans-serif;
+    --fonte-designer: 'designer', sans-serif;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+    font-family: var(--fonte-padrao);
+    text-align: justify;   
+}
+
+div.destaque {
+    color: var(--cor0);
+}
+
+header {
+    background-image: linear-gradient(to left, var(--cor2), var(--cor4)); 
+    font-family: var(--fonte-destaque);
+    color: white;   
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header h1 {
+    font-family: var(--fonte-designer);
+    text-align: left;
+    padding: 0px 0px 0px 12px;
+    margin: -30px 0px 0px 0px;
+}
+
+header h2 {
+    font-size: 1em;
+}
+
+header p.principal{
+    font-size: 1.8em;
+}
+
+nav {
+    background-image: linear-gradient(to left, var(--cor2), var(--cor4)); 
+    padding: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.468);
+}
+
+nav > a {
+    color: var(--cor0);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;  
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor5);
+}
+
+main {
+    background-color: var(--cor5);
+    font-family: var(--fonte-destaque);
+    margin: 80px;
+    padding: 30px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.468);
+    
+}
+
+main section {
+    text-align: center;
+    font-weight: bold;
+}
+
+main h1 {
+    text-align: center;
+    padding: 0px 0px 12px 0px;
+}
+
+main p.centro {
+    text-align: center;
+    padding: 8px 0px;
+}
+
+main ul {
+    font-family: var(--fonte-designer);
+    font-weight: bold;
+    padding: 30px 30px;
+}
+
+main h2 {
+    color: var(--cor3);
+}
+
+main article {
+    padding: 10px 0px 0px 0px;
+    font-weight: normal;
+}
+
+footer {
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+main img {
+    display: block;
+    margin: 0 auto;
+}
